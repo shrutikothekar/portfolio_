@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>|shopnow|</title>
+
+	<!------icon------>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<!------gsap------>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="first.css">
+    <style>
+        @media screen and (max-width: 600px) and (orientation:  landscape){
+            body{
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+	
+	<div class="stripes">
+		<div class="line-one"></div>
+		<div class="line-two"></div>
+	</div>
+	<!-- navbar -->
+	<nav>
+		<div class="logo">
+			<a href="https://www.omegawatches.com/">Omega</a>
+		</div>
+		
+		<ul>
+			<li><a href="https://www.omegawatches.com/watches/speedmaster/moonwatch-professional/catalog" target="_blank">Collection</a></li>
+			<li><a href="https://www.omegawatches.com/suggestions" target="_blank">Products</a></li>
+			<li><a href="https://www.omegawatches.com/watchfinder" target="_blank">Offers</a></li>
+			<li><a href="https://www.omegawatches.com/customer/account/login/referer/aHR0cHM6Ly93d3cub21lZ2F3YXRjaGVzLmNvbS9teW9tZWdhL2NvbnRhY3QtdXM%2C/" target="_blank">Contact</a></li>
+		</ul>
+		
+		<div class="search">
+			<i class="fa fa-search"></i>
+		</div>
+
+		<div class="menu">
+			<i class="fa fa-bars"></i>
+		</div>
+	</nav>
+	
+	<div class="img">
+		<img src="watch.png" alt="watch_img">
+	</div> 
+    <!--End Img-->
+    <!--Tital-->
+    <div class="title">
+    	<p>Seedmaster</p>
+    	<span>Moonwatch.</span>
+    </div>
+    <!--End Tital-->
+    <!--Button-->
+    <div class="btn">
+    	<a href="https://www.omegawatches.com/watchfinder" target="_blank">Order Now</a>
+    </div>
+    <!--End Button-->
+    <!---year-->
+    <div class="year">2022*</div>
+    <!--End year-->
+    <!--Media-->
+    <div class="media">
+    	<ul>
+    		<li><a href="https://www.facebook.com/shruti.kothekar.1/" class="fa fa-facebook" target="_blank"></a></li>
+    		<li><a href="https://www.instagram.com/_shutiii_k_/" class="fa fa-instagram" target="_blank"></a></li>
+    		<li><a href="https://twitter.com/ShrutiK_01" class="fa fa-twitter" target="_blank"></a></li>
+            <li><a href="https://github.com/Shruti8911" class="fa fa-github" target="_blank"></a></li>
+            <li><a href="https://www.linkedin.com/in/shruti-k-3a7739212/" class="fa fa-linkedin" target="_blank"></a></li>
+    	</ul>
+    </div>
+    <!--End Media-->
+</div>
+
+<!--script-->
+<script>
+
+        TweenMax.from(".logo", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom("nav ul li", 1, {
+            opacity: 0,
+            x: -20,
+            ease: Power3.easeInOut
+        }, 0.08)
+
+        TweenMax.from(".search", 1, {
+            opacity: 0,
+            delay: .5,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".menu", 1, {
+            opacity: 0,
+            delay: .6,
+            x: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".title", 1, {
+            opacity: 0,
+            delay: 1,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".btn", 1, {
+            opacity: 0,
+            delay: 1.6,
+            y: 20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".line-one", 1, {
+            opacity: 0,
+            delay: 2,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+        TweenMax.from(".line-two", 1, {
+            opacity: 0,
+            delay: 2.5,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".img", 2, {
+            opacity: 0,
+            delay: 2.9,
+            y: -800,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.from(".year", 1, {
+            opacity: 0,
+            delay: 1.4,
+            y: -20,
+            ease: Expo.easeInOut
+        })
+
+        TweenMax.staggerFrom(".media ul li", 2, {
+            opacity: 0,
+            delay: 3.2,
+            y: 40,
+            ease: Expo.easeInOut
+        }, 0.2)
+
+
+</script>
+<!-----------------------------End script-------------------------------->
+
+</body>
+</html>
